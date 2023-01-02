@@ -1,0 +1,199 @@
+   body{  
+  font-family: "Poppins", sans-serif;    
+  font-size: 15px;  
+  line-height: 1.5; 
+  padding: 0;  
+  margin: 0;  
+  background: linear-gradient(90deg,#FFFF00 6%,#FFA500 25%,#F14444 45%,#D53567 55%,#9A109A 94%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  
+
+ }  
+
+.colour {  
+  position: absolute;  
+  filter: blur(150px);  
+}  
+.colour:nth-child(1) {  
+  top: -350px;  
+  width: 600px;  
+  height: 600px;  
+  background: #bf4ad4;  
+}  
+.colour:nth-child(2) {  
+  left: 100px;  
+  width: 500px;  
+  height: 500px;  
+  bottom: -150px;  
+  background: #ffa500;  
+}  
+.colour:nth-child(3) {  
+  right: 100px;  
+  bottom: 50px;  
+  width: 300px;  
+  height: 300px;  
+  background: #2b67f3;  
+}  
+.box {  
+  position: relative;  
+}  
+.box .square {  
+  position: absolute;  
+  border-radius: 10px;  
+  backdrop-filter: blur(5px);  
+  background: rgba(255, 255, 255, 0.1);  
+  animation-delay: calc(-1s * var(--i));  
+  animation: animate 8s linear infinite;  
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);  
+  border: 1px solid rgba(255, 255, 255, 0.5);  
+  border-right: 1px solid rgba(255, 255, 255, 0.2);  
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);  
+}  
+@keyframes animate {  
+  0%,  
+  150% {  
+       transform: translateY(-40px);  
+  }  
+  50% {  
+       transform: translateY(40px);  
+  }  
+}  
+.box .square:nth-child(1) {  
+  top: -50px;  
+  left: -60px;  
+  width: 100px;  
+  height: 100px;  
+}  
+.box .square:nth-child(2) {  
+  z-index: 2;  
+  top: 150px;  
+  left: -100px;  
+  width: 120px;  
+  height: 120px;  
+}  
+.box .square:nth-child(3) {  
+  z-index: 2;  
+  width: 80px;  
+  height: 80px;  
+  right: -50px;  
+  bottom: -60px;  
+}  
+.box .square:nth-child(4) {  
+  left: 100px;  
+  width: 50px;  
+  height: 50px;  
+  bottom: -80px;  
+}  
+.box .square:nth-child(5) {  
+  top: -80px;  
+  left: 140px;  
+  width: 60px;  
+  height: 60px;  
+}  
+
+ * {  
+  box-sizing: border-box;  
+ }  
+ .container{  
+  width:520px;  
+  height: auto;  
+  margin: 100px auto;   
+  border-radius: 25px;   
+  display: flex;  
+  min-height: 400px;  
+  position: relative;   
+  align-items: center;  
+  justify-content: center;  
+  backdrop-filter: blur(5px);  
+  background: rgba(255, 255, 255, 0.1);  
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);  
+  border: 1px solid rgba(255, 255, 255, 0.5);  
+  border-right: 1px solid rgba(255, 255, 255, 0.2);  
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);   
+  
+ }  
+ .base{  
+  width: 100%;  
+  margin: 0;  
+  overflow: hidden;  
+  display: block;  
+  float: none;  
+ }  
+ .block{  
+  width: 135px;  
+  padding: 5px 20px;  
+  margin-left: 20px;  
+  display: inline-block;  
+  float: left;  
+ }  
+ .base h4{  
+  font-size: 26px;  
+  text-align: center;  
+  font-family: "Poppins","sans-serif";  
+  font-weight: normal;  
+  margin-top: 0px;  
+  box-shadow: 0px 2px #bababa;  
+  background:  rgba(255, 255, 255, 0.1);
+  font-size: 34px;  
+  color: #fff;   
+ }  
+ .title{  
+  font-size: 20px;  
+  text-align: left;  
+  font-family: "Poppins","sans-serif";  
+  font-weight: normal;  
+  line-height: 0.5;  
+  letter-spacing: 0.5px;  
+  word-spacing: 2.7px;  
+  color: #fff;  
+ }  
+ input[type=text] {  
+  width: 140px;  
+  margin: auto;  
+  outline: none;  
+  min-height: 50px;  
+  border: 1px solid rgba(255, 255, 255, 0.5);   
+  padding: 12px;  
+  background-color:  rgba(255, 255, 255, 0.1); 
+   border-radius: 2px;  
+   color: #fff;  
+   font-size: 17px;  
+ }  
+ input[type=text]:focus{  
+  background-color:  rgba(255, 255, 255, 0.1); 
+  border: 2px solid orange;  
+  outline: none;  
+ }  
+ input[type=button]{  
+  width: 150px;  
+  margin-left: 35%;  
+  margin-top: 40px;  
+  outline: none;  
+  border: none;  
+  border-radius: 2px;  
+  background-color: #fff;  
+  color: #666;
+  padding: 14px 16px;  
+  text-align: center;  
+  font-size: 16px;  
+ }  
+ input[type=button]:hover{  
+  background-color: #003669;  
+ }  
+ #age{  
+  display: block;  
+  margin: 10px;  
+  margin-top: 35px;  
+  padding: 10px;  
+  padding-bottom: 20px;  
+  overflow: hidden;  
+  font-family: "Poppins","sans-serif";  
+  font-size: 23px;  
+  font-weight: normal;  
+  line-height: 1.5;  
+  word-spacing: 2.7px;  
+  color: #fff;  
+ } 
